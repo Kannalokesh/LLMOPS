@@ -3,10 +3,10 @@ import sys
 from dotenv import load_dotenv
 
 from langchain_google_genai import (
-    GoogleGenerativeAIEmbeddings,
     ChatGoogleGenerativeAI,
 )
 from langchain_groq import ChatGroq
+from langchain_community.embeddings import HuggingFaceEmbeddings
 
 from multi_doc_chat.utils.config_loader import load_config
 from multi_doc_chat.logger import GLOBAL_LOGGER as log
@@ -69,20 +69,34 @@ class ModelLoader:
 
     def load_embeddings(self):
         """
-        Load and return embedding model from Google Generative AI.
+        Load and return embedding model based on config.
         """
         try:
+            provider = self.config["embedding_model"]["provider"]
             model_name = self.config["embedding_model"]["model_name"]
-            log.info("Loading embedding model", model=model_name)
 
-            return GoogleGenerativeAIEmbeddings(
-                model=model_name,
-                google_api_key=self.api_key_mgr.get_google_key()
+            log.info(
+                "Loading embedding model",
+                provider=provider,
+                model=model_name
             )
+
+            if provider == "huggingface":
+                return HuggingFaceEmbeddings(
+                    model_name=model_name
+                )
+
+            else:
+                raise ValueError(
+                    f"Embedding provider '{provider}' is not supported"
+                )
 
         except Exception as e:
             log.error("Error loading embedding model", error=str(e))
-            raise DocumentPortalException("Failed to load embedding model", sys)
+            raise DocumentPortalException(
+                "Failed to load embedding model", sys
+            )
+
 
     def load_llm(self):
         """

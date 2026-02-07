@@ -9,6 +9,8 @@ langchain-groq==0.3.6
 langchain-google-genai==2.1.8
 langchain-openai==0.2.10
 
+sentence-transformers
+
 docx2txt==0.9
 ipykernel==6.30.0
 python-multipart==0.0.20

@@ -1,0 +1,14 @@
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-07T12:29:46.674124Z", "level": "info", "event": "API keys loaded"}
+{"session_id": "session_20260207_175946_96c33968", "temp_dir": "data\\session_20260207_175946_96c33968", "faiss_dir": "faiss_index\\session_20260207_175946_96c33968", "sessionized": true, "timestamp": "2026-02-07T12:29:46.678023Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "agentic_ai.txt", "saved_as": "data\\session_20260207_175946_96c33968\\07610a69.txt", "timestamp": "2026-02-07T12:29:46.681713Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 1, "timestamp": "2026-02-07T12:29:46.707837Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 3, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-02-07T12:29:46.711964Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2026-02-07T12:29:46.713956Z", "level": "info", "event": "Loading embedding model"}
+{"error": "Error embedding content: 404 models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ListModels to see the list of available models and their supported methods.", "timestamp": "2026-02-07T12:29:47.431703Z", "level": "error", "event": "Failed to build retriever"}
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-07T12:30:08.608278Z", "level": "info", "event": "API keys loaded"}
+{"session_id": "session_20260207_180008_56da96dd", "temp_dir": "data\\session_20260207_180008_56da96dd", "faiss_dir": "faiss_index\\session_20260207_180008_56da96dd", "sessionized": true, "timestamp": "2026-02-07T12:30:08.611558Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "attention is all you need.pdf", "saved_as": "data\\session_20260207_180008_56da96dd\\559b8fdb.pdf", "timestamp": "2026-02-07T12:30:08.618449Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2026-02-07T12:30:11.223573Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 52, "chunk_size": 1000, "overlap": 200, "timestamp": "2026-02-07T12:30:11.226678Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2026-02-07T12:30:11.228687Z", "level": "info", "event": "Loading embedding model"}
+{"error": "Error embedding content: 404 models/text-embedding-004 is not found for API version v1beta, or is not supported for embedContent. Call ListModels to see the list of available models and their supported methods.", "timestamp": "2026-02-07T12:30:11.768239Z", "level": "error", "event": "Failed to build retriever"}
