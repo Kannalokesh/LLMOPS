@@ -1,0 +1,7 @@
+HTTP Request: POST http://testserver/chat "HTTP/1.1 400 Bad Request"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 400 Bad Request"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 200 OK"
+HTTP Request: POST http://testserver/chat "HTTP/1.1 500 Internal Server Error"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 200 OK"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 422 Unprocessable Entity"
+HTTP Request: POST http://testserver/upload "HTTP/1.1 500 Internal Server Error"

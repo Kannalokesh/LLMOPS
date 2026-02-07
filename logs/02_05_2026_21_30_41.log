@@ -1,0 +1,24 @@
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-05T16:00:42.436743Z", "level": "info", "event": "API keys loaded"}
+{"session_id": "session_20260205_213042_7d359768", "temp_dir": "data\\session_20260205_213042_7d359768", "faiss_dir": "faiss_index\\session_20260205_213042_7d359768", "sessionized": true, "timestamp": "2026-02-05T16:00:42.439744Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "\\Users\\junjo\\Desktop\\PRO\\LLMops\\data\\attention is all you need.pdf", "saved_as": "data\\session_20260205_213042_7d359768\\624b82eb.pdf", "timestamp": "2026-02-05T16:00:42.445889Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2026-02-05T16:00:44.188952Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 251, "chunk_size": 200, "overlap": 20, "timestamp": "2026-02-05T16:00:44.196660Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2026-02-05T16:00:44.197882Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20260205_213042_7d359768", "timestamp": "2026-02-05T16:00:47.828300Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2026-02-05T16:00:47.828300Z", "level": "info", "event": "Using MMR search"}
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-05T16:00:47.831297Z", "level": "info", "event": "API keys loaded"}
+{"provider": "groq", "model": "llama-3.1-8b-instant", "timestamp": "2026-02-05T16:00:47.832297Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20260205_213042_7d359768", "timestamp": "2026-02-05T16:00:49.207005Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20260205_213042_7d359768", "timestamp": "2026-02-05T16:00:49.207005Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-05T16:00:49.209994Z", "level": "info", "event": "API keys loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2026-02-05T16:00:49.209994Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20260205_213042_7d359768", "timestamp": "2026-02-05T16:00:49.264162Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20260205_213042_7d359768", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20260205_213042_7d359768", "timestamp": "2026-02-05T16:00:49.265470Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20260205_213042_7d359768", "user_input": "hi", "answer_preview": "I don't know.", "timestamp": "2026-02-05T16:00:55.907936Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20260205_213042_7d359768", "user_input": "what does layer normalization do in transformers", "answer_preview": "Layer normalization is a technique used in the Transformer model to normalize the input data at each layer, which helps to stabilize the training proc", "timestamp": "2026-02-05T16:01:22.978921Z", "level": "info", "event": "Chain invoked successfully"}

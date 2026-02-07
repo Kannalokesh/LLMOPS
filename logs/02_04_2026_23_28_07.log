@@ -1,0 +1,24 @@
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-04T17:58:08.166634Z", "level": "info", "event": "API keys loaded"}
+{"session_id": "session_20260204_232808_6dfb907f", "temp_dir": "data\\session_20260204_232808_6dfb907f", "faiss_dir": "faiss_index\\session_20260204_232808_6dfb907f", "sessionized": true, "timestamp": "2026-02-04T17:58:08.170534Z", "level": "info", "event": "ChatIngestor initialized"}
+{"uploaded": "\\Users\\junjo\\Desktop\\PRO\\LLMops\\data\\attention is all you need.pdf", "saved_as": "data\\session_20260204_232808_6dfb907f\\2f23e166.pdf", "timestamp": "2026-02-04T17:58:08.172644Z", "level": "info", "event": "File saved for ingestion"}
+{"count": 15, "timestamp": "2026-02-04T17:58:09.295050Z", "level": "info", "event": "Documents loaded"}
+{"chunks": 251, "chunk_size": 200, "overlap": 20, "timestamp": "2026-02-04T17:58:09.301152Z", "level": "info", "event": "Documents split"}
+{"model": "models/text-embedding-004", "timestamp": "2026-02-04T17:58:09.302147Z", "level": "info", "event": "Loading embedding model"}
+Loading faiss with AVX2 support.
+Successfully loaded faiss with AVX2 support.
+{"added": 1, "index": "faiss_index\\session_20260204_232808_6dfb907f", "timestamp": "2026-02-04T17:58:12.460979Z", "level": "info", "event": "FAISS index updated"}
+{"k": 5, "fetch_k": 20, "lambda_mult": 0.5, "timestamp": "2026-02-04T17:58:12.460979Z", "level": "info", "event": "Using MMR search"}
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-04T17:58:12.463977Z", "level": "info", "event": "API keys loaded"}
+{"provider": "groq", "model": "llama-3.1-8b-instant", "timestamp": "2026-02-04T17:58:12.463977Z", "level": "info", "event": "Loading LLM"}
+{"session_id": "session_20260204_232808_6dfb907f", "timestamp": "2026-02-04T17:58:13.590901Z", "level": "info", "event": "LLM loaded successfully"}
+{"session_id": "session_20260204_232808_6dfb907f", "timestamp": "2026-02-04T17:58:13.590901Z", "level": "info", "event": "ConversationalRAG initialized"}
+{"google": "yes", "groq": "yes", "timestamp": "2026-02-04T17:58:13.594797Z", "level": "info", "event": "API keys loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2026-02-04T17:58:13.594797Z", "level": "info", "event": "Loading embedding model"}
+{"session_id": "session_20260204_232808_6dfb907f", "timestamp": "2026-02-04T17:58:13.677630Z", "level": "info", "event": "LCEL graph built successfully"}
+{"index_path": "faiss_index\\session_20260204_232808_6dfb907f", "index_name": "index", "search_type": "mmr", "k": 5, "fetch_k": 20, "lambda_mult": 0.5, "session_id": "session_20260204_232808_6dfb907f", "timestamp": "2026-02-04T17:58:13.677630Z", "level": "info", "event": "FAISS retriever loaded successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20260204_232808_6dfb907f", "user_input": "what is query, key , value in attention mechanism", "answer_preview": "In the attention mechanism, the query, key, and value are matrices that are used to compute the attention weights. \n\n- **Query (Q)**: A matrix of quer", "timestamp": "2026-02-04T17:58:47.639143Z", "level": "info", "event": "Chain invoked successfully"}
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+{"session_id": "session_20260204_232808_6dfb907f", "user_input": "can you explain in detail", "answer_preview": "In the attention mechanism, the query, key, and value are matrices that are used to compute the attention weights. Here's a detailed explanation:\n\n1. ", "timestamp": "2026-02-04T17:59:34.472789Z", "level": "info", "event": "Chain invoked successfully"}

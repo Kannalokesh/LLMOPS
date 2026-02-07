@@ -1,0 +1,2 @@
+{"timestamp": "2026-02-04T17:53:52.453256Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"error": "maximum recursion depth exceeded", "timestamp": "2026-02-04T17:53:54.102862Z", "level": "error", "event": "Failed to initialize ChatIngestor"}

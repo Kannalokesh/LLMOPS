@@ -1,0 +1,2 @@
+{"missing_keys": ["GOOGLE_API_KEY"], "timestamp": "2026-02-04T17:56:23.730270Z", "level": "error", "event": "Missing required API keys"}
+{"error": "Error in [<unknown>] at line [-1] | Message: Missing API keys: GOOGLE_API_KEY", "timestamp": "2026-02-04T17:56:23.731164Z", "level": "error", "event": "Failed to initialize ChatIngestor"}
